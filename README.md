@@ -72,7 +72,7 @@
 * In the file, find the line with advertised.listeners.
 * Replace your.host.name with the public IP address of your EC2 instance.
 <p align="center">
-<img src="data/images/public_ip.JPG"  height="100" width="600" />
+<img src="data/images/public_ip.JPG"  height="200" width="500" />
 </p>
 * Press Ctrl + X to exit.
 * Press Y to confirm the changes.
