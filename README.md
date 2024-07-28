@@ -165,6 +165,15 @@
     
   - Enter the access key ID and secret access key from the .csv file.
   - Set the default region name to match the region where your S3 bucket is located.
+ 
+## 3. Use Jupyter Notebook to stimulate live stock data
+
+* Start the Consumer Notebook First
+    - [Run the notebook](./kafka-producer.ipynb), last function should keep running inorder to start the producer notebook)
+* Run the Producer Notebook
+    - [Run the notebook](./kafka_consumer.ipynb)Start the producer notebook and allow it to run for a few seconds, generating and sending data.
+
+
 
 
     
