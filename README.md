@@ -71,12 +71,12 @@
             sudo nano config/server.properties
 * In the file, find the line with advertised.listeners.
 * Replace your.host.name with the public IP address of your EC2 instance.
+* 
 <p align="center">
 <img src="data/images/public_ip.JPG"  height="200" width="500" />
 </p>
 * Press Ctrl + X to exit.
-* Press Y to confirm the changes.
-* Press Enter to save and exit.
+* Press Y to confirm the changes and enter to save and exit.
 
 
   
