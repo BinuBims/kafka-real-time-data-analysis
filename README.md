@@ -175,11 +175,63 @@
     </p>
 * Run the [Producer Notebook](./kafka-producer.ipynb)
     - Start the producer notebook and allow it to run for a few seconds, generating and sending data.
+ 
+* After stopping the consumer notebook, check your S3 bucket. You should see files containing the simulated stock data that was processed by the consumer.
 
+## 4. Configure a Crawler and a Data Catalog
+* Create a Crawler
+  - In the AWS Management Console, search for "Glue" and select it.
+  - Under the "Data Catalog" section, click on "Crawlers."
+  - Click "Add crawler" to start creating a new crawler.
+  - Name your crawler and click "Next."
+  - For the data source, select "S3" and ensure "In this account" is checked.
+  - Browse to select the S3 bucket where your data is stored. Make sure to include a "/" at the end of the path.
+  - Add the S3 data source and click "Next."
+ 
+* Create an IAM Role for the Crawler
+  - Open a new tab and navigate to IAM.
+  - Click on "Roles" and then "Create role."
+  - Select "AWS service" and choose "Glue" from the "Use case" dropdown.
+  - Click "Next" and select the "AdministratorAccess" policy.
+  - Click "Next," name your role, and create it.
+ 
+* Configure Security Settings for the Crawler
+  - Return to the Glue crawler setup.
+  - Under "Configure security settings," select the IAM role you just created from the "Existing IAM role" dropdown.
+  - Click "Next."
+ 
+* Create and Select a Target Database
+  - For the "Target database," click on "Add database."
+  - Enter a name for the new database and click "Create database."
+  - Go back to the Glue crawler setup and select the database you created from the "Target database" dropdown.
+  - Click "Next" and then "Create crawler."
 
+* Once the crawler is created, select it from the list and click "Run" to start the crawling process. This will scan your S3 data and update the Glue Data Catalog with metadata about your data.
 
+## 5. Utilize Athena to Run SQL Queries
+* Set Up an S3 Bucket for Athena Query Results
+  - Ensure you have an S3 bucket created specifically for storing Athena query results.
 
-    
+* Configure Athena Settings
+  - After your Glue crawler has successfully run, search for "Athena" in the AWS Management Console.
+  - Go to "Settings" and select "Manage."
+  - Browse and choose the S3 bucket you created for query results, then save the settings.
+ 
+* Querying Data in Athena
+  - Select "AwsDataCatalog" as your data source.
+  - Choose the database created by your Glue crawler.
+  - Click the three dots next to a table and select "Preview table."
+  - To monitor data changes, run the following query in the query editor
 
+        SELECT COUNT(*) FROM "your_database_name"
+
+* To perform real-time analysis, start both the consumer and producer notebooks that simulate live stock data.
   
+* As the notebooks run, query your data using Athena. You will observe the count increasing in real-time as new data is ingested.
+  
+## 5. Cleanup
+* Cleanup
+After completing your analysis, ensure that you clean up all the resources you created, such as EC2 instances, S3 buckets, and Glue crawlers, to avoid unexpected charges.
+
+## Congratulations! :HEART:
 
