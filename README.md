@@ -136,7 +136,22 @@
 
 - To verify everything is working correctly, type a message in the producer terminal. You should see the message appear immediately in the consumer terminal.
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://www.youtube.com/watch?v=z2F62rS1b70)
+<p align="center">
+<img src="data/images/kafka-working.gif"  height="400" width="600" />
+</p>
+
+## 2. Creating an S3 Bucket and IAM User
+* Create a User with S3 Access
+  - In the AWS Management Console, type "IAM" in the search bar and select it.
+  - Navigate to "Users" and click "Add user."
+  - Enter a name for the new user.
+  - On the next page, select "Attach policies directly."
+  - Search for "AmazonS3FullAccess" and check the box to attach this policy.
+  - Continue to the next steps and click "Create user."
+
+
+
+
     
 
   
