@@ -79,6 +79,48 @@
 * Press Y to confirm the changes
 * Press enter to save and exit.
 
+### Starting the Zookeeper Server
+* Open a New Terminal
+* Connect to Your EC2 Instance via SSH
+* Navigate to the Kafka Directory
+
+    cd kafka_2.13-3.7.1
+
+* Start the Zookeeper Server
+
+    bin/zookeeper-server-start.sh config/zookeeper.properties
+
+### Starting the Kafka Server
+* Open Another Terminal
+* Connect to Your EC2 Instance via SSH
+* Set Memory Allocation for Kafka
+
+    export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+
+* Navigate to the Kafka Directory
+
+    cd kafka_2.13-3.7.1
+
+* Start the Kafka Server
+
+    bin/kafka-server-start.sh config/server.properties
+
+### Setting Up Kafka Producer and Consumer
+- Create a Topic in Kafka
+    * Open a New Terminal
+    * Connect to Your EC2 Instance via SSH
+    * Navigate to the Kafka Directory
+
+    cd kafka_2.13-3.7.1
+
+    * Create the Topic
+
+    bin/kafka-topics.sh --create --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092 --replication-factor 1 --partitions 1
+
+- Start a Kafka Producer
+    * 
+  
+    
 
   
 
