@@ -33,8 +33,8 @@
 * Select the instance you launched, then go to the "Security" tab.
 * Click on the associated security group to modify its settings.
 * Edit the inbound rules by adding a new rule:
-    Set the type to "All traffic."
-    Set the source to "Anywhere-IPv4" to allow connections from any IP address.
+  - Set the type to "All traffic."
+  - Set the source to "Anywhere-IPv4" to allow connections from any IP address.
 * Save the rules.
 
 ### SSH into your EC2 from your local machine.
@@ -72,7 +72,7 @@
 * In the file, find the line with advertised.listeners.
 * Replace your.host.name with the public IP address of your EC2 instance.
 <p align="center">
-<img src="data/images/Capture.JPG"  height="50" width="600" />
+<img src="data/images/public_ip.JPG"  height="100" width="600" />
 </p>
 * Press Ctrl + X to exit.
 * Press Y to confirm the changes.
