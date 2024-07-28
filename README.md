@@ -76,7 +76,8 @@
 <img src="data/images/public_ip.JPG"  height="200" width="500" />
 </p>
 * Press Ctrl + X to exit.
-* Press Y to confirm the changes and enter to save and exit.
+* Press Y to confirm the changes
+* Press enter to save and exit.
 
 
   
