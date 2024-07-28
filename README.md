@@ -111,11 +111,11 @@
     * Connect to Your EC2 Instance via SSH
     * Navigate to the Kafka Directory
 
-    cd kafka_2.13-3.7.1
+          cd kafka_2.13-3.7.1
 
     * Create the Topic
 
-    bin/kafka-topics.sh --create --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092 --replication-factor 1 --partitions 1
+          bin/kafka-topics.sh --create --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092 --replication-factor 1 --partitions 1
 
 - Start a Kafka Producer
     * 
