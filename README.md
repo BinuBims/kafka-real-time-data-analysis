@@ -52,12 +52,15 @@
 ### Installing Kafka and Zookeeper
 * After connecting to your EC2 instance via SSH, follow these steps to install Kafka:
     Download Kafka
+  
         wget https://dlcdn.apache.org/kafka/3.7.1/kafka_2.13-3.7.1.tgz
   
     Extract the Kafka Archive
+  
         tar -xzf kafka_2.13-3.7.1.tgz
   
     Kafka requires Java to run. Install it using the following command:
+  
         sudo yum install java-22-amazon-corretto-devel
 
 ### Configuring Kafka to Use the Public IP Address
@@ -69,7 +72,7 @@
 * In the file, find the line with advertised.listeners.
 * Replace your.host.name with the public IP address of your EC2 instance.
 <p align="center">
-<img src="data/images/Capture.jpg"  height="400" width="600" />
+<img src="data/images/Capture.JPG"  height="400" width="600" />
 </p>
 * Press Ctrl + X to exit.
 * Press Y to confirm the changes.
