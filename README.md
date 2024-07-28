@@ -118,8 +118,22 @@
           bin/kafka-topics.sh --create --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092 --replication-factor 1 --partitions 1
 
 - Start a Kafka Producer
-    * 
+
+          bin/kafka-console-producer.sh --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092
+
+- Start a Kafka Consumer
+    * Open Another Terminal
+    * Connect to Your EC2 Instance via SSH
+    * Navigate to the Kafka Directory
+
+          cd kafka_2.13-3.7.1
+
+    * Start the Consumer
   
+        bin/kafka-console-consumer.sh --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092
+
+
+  - To verify everything is working correctly, type a message in the producer terminal. You should see the message appear immediately in the consumer terminal.
     
 
   
