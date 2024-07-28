@@ -130,10 +130,10 @@
 
     * Start the Consumer
   
-        bin/kafka-console-consumer.sh --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092
+          bin/kafka-console-consumer.sh --topic your_topic_name --bootstrap-server your-ec2-public-ip:9092
 
 
-  - To verify everything is working correctly, type a message in the producer terminal. You should see the message appear immediately in the consumer terminal.
+- To verify everything is working correctly, type a message in the producer terminal. You should see the message appear immediately in the consumer terminal.
     
 
   
