@@ -1,6 +1,6 @@
 <h2>This project is about real time data analysis using Kafka and Athena</h2>
 
-### The architecture
+### ARCHITECTURE
 <p align="center">
 <img src="data/images/architecture.jpeg"  height="400" width="600" />
 </p>
@@ -137,7 +137,7 @@
 - To verify everything is working correctly, type a message in the producer terminal. You should see the message appear immediately in the consumer terminal.
 
 <p align="center">
-<img src="data/images/kafka-working.gif"  height="400" width="600" />
+<img src="data/images/kafka-working.gif"  height="200" width="600" />
 </p>
 
 ## 2. Creating an S3 Bucket and IAM User
