@@ -136,7 +136,7 @@
 
 - To verify everything is working correctly, type a message in the producer terminal. You should see the message appear immediately in the consumer terminal.
 
-[![Watch the video](data/images/kafka-working.mp4)
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://www.youtube.com/watch?v=z2F62rS1b70)
     
 
   
