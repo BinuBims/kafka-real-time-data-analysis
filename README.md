@@ -148,8 +148,23 @@
   - On the next page, select "Attach policies directly."
   - Search for "AmazonS3FullAccess" and check the box to attach this policy.
   - Continue to the next steps and click "Create user."
+ 
+* Generate Access Keys for the User
+  - Return to the "Users" section and click on the username you just created.
+  - Go to the "Security credentials" tab.
+  - Click "Create access key."
+  - Select "Command Line Interface (CLI)" and acknowledge the security warning by ticking the confirmation checkbox.
+  - Click "Create access key" and download the .csv file containing the access key ID and secret access key. Store this file
+  - securely and do not share it publicly.
+    
+* Configure AWS CLI on Your Local Machine
+  - Follow the instructions in the AWS CLI installation guide to install the AWS CLI on your computer.
+  - Open a terminal and run the following command:
 
-
+        aws configure
+    
+  - Enter the access key ID and secret access key from the .csv file.
+  - Set the default region name to match the region where your S3 bucket is located.
 
 
     
