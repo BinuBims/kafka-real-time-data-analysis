@@ -168,10 +168,13 @@
  
 ## 3. Use Jupyter Notebook to stimulate live stock data
 
-* Start the Consumer Notebook First
-    - [Run the notebook](./kafka-producer.ipynb), last function should keep running inorder to start the producer notebook)
-* Run the Producer Notebook
-    - [Run the notebook](./kafka_consumer.ipynb)Start the producer notebook and allow it to run for a few seconds, generating and sending data.
+* Start the [Consumer Notebook](./kafka_consumer.ipynb) First
+    - Run the notebook (last function should keep running in order to start the producer notebook)
+    <p align="center">
+<img src="data/images/j_notebook.JPG"  height="150" width="550" />
+</p>
+* Run the [Producer Notebook](./kafka-producer.ipynb)
+    - Start the producer notebook and allow it to run for a few seconds, generating and sending data.
 
 
 
