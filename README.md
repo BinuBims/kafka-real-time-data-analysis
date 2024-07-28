@@ -233,5 +233,5 @@
 * Cleanup
 After completing your analysis, ensure that you clean up all the resources you created, such as EC2 instances, S3 buckets, and Glue crawlers, to avoid unexpected charges.
 
-## Congratulations! :HEART:
+## Congratulations! :U+2764:
 
