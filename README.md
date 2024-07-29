@@ -235,3 +235,6 @@ After completing your analysis, ensure that you clean up all the resources you c
 
 ## Congratulations! :+1:
 
+## Acknowledgments
+[Darshil Parmar](https://www.youtube.com/@DarshilParmar)
+
