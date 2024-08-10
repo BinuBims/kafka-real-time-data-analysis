@@ -28,7 +28,7 @@
 * Select "Amazon Linux" as your Amazon Machine Image (AMI).
 * Under "Key pair," create a new key pair and download it for SSH access.
 
-### Launch an EC2 Instance on AWS
+### Change EC2 Security Group Rules
 * Navigate to "Instances" in the EC2 dashboard.
 * Select the instance you launched, then go to the "Security" tab.
 * Click on the associated security group to modify its settings.
